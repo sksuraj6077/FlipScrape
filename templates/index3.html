@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FlipKart Mobile Data Scraper</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+            margin: 0; /* Remove default margin */
+            background-color: lightblue; /* Set the background color */
+            color: black; /* Set the text color */
+        }
+        h1 {
+            color: navy; /* Set the heading color */
+        }
+        form {
+            margin-bottom: 20px; /* Add some margin below the form */
+            text-align: center; /* Center-align the form */
+        }
+        label {
+            display: block; /* Display labels on a new line */
+            margin-bottom: 5px; /* Add some margin below labels */
+        }
+        input[type="text"] {
+            padding: 5px; /* Add padding to text inputs */
+            margin-bottom: 10px; /* Add some margin below text inputs */
+        }
+        input[type="submit"] {
+            padding: 10px 20px; /* Add padding to the submit button */
+            background-color: green; /* Set the button background color */
+            color: white; /* Set the button text color */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor on hover */
+        }
+        input[type="submit"]:hover {
+            background-color: darkgreen; /* Change button color on hover */
+        }
+        a {
+            display: inline-block; /* Display the link as a block */
+            padding: 10px 20px; /* Add padding to the link */
+            background-color: blue; /* Set the link background color */
+            color: white; /* Set the link text color */
+            text-decoration: none; /* Remove underline */
+            margin-top: 10px; /* Add margin at the top */
+        }
+        a:hover {
+            background-color: darkblue; /* Change link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>FlipKart Mobile Data Scraper</h1>
+    <form action="/scrape" method="post">
+        <label for="start_page">Starting Page:</label>
+        <input type="text" id="start_page" name="start_page"><br><br>
+
+        <label for="end_page">Ending Page:</label>
+        <input type="text" id="end_page" name="end_page"><br><br>
+
+        <input type="submit" value="Download Scrape Data ">
+    </form>
+</body>
+</html>

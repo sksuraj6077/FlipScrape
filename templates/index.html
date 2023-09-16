@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Data Scraper</title>
+</head>
+<body>
+    <h1>Mobile Data Scraper</h1>
+    <form action="/scrape" method="post">
+        <label for="start_page">Starting Page:</label>
+        <input type="text" id="start_page" name="start_page"><br><br>
+
+        <label for="end_page">Ending Page:</label>
+        <input type="text" id="end_page" name="end_page"><br><br>
+
+        <input type="submit" value="Scrape Data">
+    </form>
+
+    <a href="/download">Download Scraped Data</a>
+</body>
+</html>
